@@ -12,22 +12,43 @@
     }
       .pricing-container{
         display: flex;
-        flex-wrap: wrap;
         flex-direction: row;
         justify-content: center;
-        align-items: center;
+        align-items: stretch;
         gap: 25px;
       }
     .pricing-container >* {
       border: 10px solid purple;
       text-align: center;
-      align-content: flex-start;
       flex-basis: 200px;
+      background-color: aliceblue;
+    }
+    .plan-features {
+      list-style-type: none;
+      background-color: antiquewhite;
+
+    }
+    .plan-button {
+      background-color: orange;
+      color: red;
+    }
+    .plan-price {
+      color: blue;
+      text-decoration: underline;
+      font-size: 2rem;
+    }
+    .plan-title {
+      font-weight: bold;
     }
     /* Hint: What can you do with a media query and flexbox? */
     @media (max-width: 1250px) {
       .pricing-container {
         flex-direction: column;
+        align-items: flex-start;
+      }
+      .pricing-container > * {
+        border: 10px solid blueviolet;
+        width: 250px;
       }
     }
   </style>
